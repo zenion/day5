@@ -74,7 +74,7 @@ export class TodoApp {
 
   printTasks() {
     for (let task of this.db.tasks) {
-      console.log(`${task.id} - Task: ${task.name} -- complete: ${task.done}`)
+      console.log(`${task.id} - Task: ${task.name} -- complete: ${task.done ? '✅' : '❌'}`)
     }
   }
 }
