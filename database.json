@@ -1,60 +1,60 @@
 {
-    "nextId": 12,
-    "tasks": [
-        {
-            "id": 1,
-            "name": "my cool new task i added!",
-            "done": true
-        },
-        {
-            "id": 2,
-            "name": "my cool new task i added!",
-            "done": false
-        },
-        {
-            "id": 3,
-            "name": "my cool new task i added!",
-            "done": false
-        },
-        {
-            "id": 4,
-            "name": "my cool new task i added!",
-            "done": false
-        },
-        {
-            "id": 5,
-            "name": "my cool new task i added!",
-            "done": true
-        },
-        {
-            "id": 6,
-            "name": "my cool new task i added!",
-            "done": false
-        },
-        {
-            "id": 7,
-            "name": "my cool new task i added!",
-            "done": false
-        },
-        {
-            "id": 8,
-            "name": "my cool new task i added!",
-            "done": false
-        },
-        {
-            "id": 9,
-            "name": "need to read about UUIDs",
-            "done": false
-        },
-        {
-            "id": 10,
-            "name": "i cant think of task names!",
-            "done": false
-        },
-        {
-            "id": 11,
-            "name": "i cant think of task names!",
-            "done": false
-        }
-    ]
+  "nextId": 12,
+  "tasks": [
+    {
+      "id": 1,
+      "name": "my cool new task i added!",
+      "done": true
+    },
+    {
+      "id": 2,
+      "name": "my cool new task i added!",
+      "done": false
+    },
+    {
+      "id": 3,
+      "name": "my cool new task i added!",
+      "done": false
+    },
+    {
+      "id": 4,
+      "name": "my cool new task i added!",
+      "done": false
+    },
+    {
+      "id": 5,
+      "name": "my cool new task i added!",
+      "done": true
+    },
+    {
+      "id": 6,
+      "name": "my cool new task i added!",
+      "done": false
+    },
+    {
+      "id": 7,
+      "name": "my cool new task i added!",
+      "done": false
+    },
+    {
+      "id": 8,
+      "name": "my cool new task i added!",
+      "done": false
+    },
+    {
+      "id": 9,
+      "name": "need to read about UUIDs",
+      "done": false
+    },
+    {
+      "id": 10,
+      "name": "i cant think of task names!",
+      "done": false
+    },
+    {
+      "id": 11,
+      "name": "i cant think of task names!",
+      "done": false
+    }
+  ]
 }

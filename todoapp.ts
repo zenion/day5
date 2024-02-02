@@ -27,7 +27,7 @@ export class TodoApp {
   }
 
   #writeDatabase() {
-    fs.writeFileSync('./database.json', JSON.stringify(this.db, null, 4))
+    fs.writeFileSync('./database.json', JSON.stringify(this.db, null, 2))
   }
 
   getTaskById(taskId: number): Task {
