@@ -1,0 +1,50 @@
+{
+    "nextId": 10,
+    "tasks": [
+        {
+            "id": 1,
+            "name": "my cool new task i added!",
+            "done": true
+        },
+        {
+            "id": 2,
+            "name": "my cool new task i added!",
+            "done": false
+        },
+        {
+            "id": 3,
+            "name": "my cool new task i added!",
+            "done": false
+        },
+        {
+            "id": 4,
+            "name": "my cool new task i added!",
+            "done": false
+        },
+        {
+            "id": 5,
+            "name": "my cool new task i added!",
+            "done": true
+        },
+        {
+            "id": 6,
+            "name": "my cool new task i added!",
+            "done": false
+        },
+        {
+            "id": 7,
+            "name": "my cool new task i added!",
+            "done": false
+        },
+        {
+            "id": 8,
+            "name": "my cool new task i added!",
+            "done": false
+        },
+        {
+            "id": 9,
+            "name": "need to read about UUIDs",
+            "done": false
+        }
+    ]
+}
