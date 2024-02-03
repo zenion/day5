@@ -1,4 +1,7 @@
 import fs from 'fs'
+import select from '@inquirer/select'
+import expand from '@inquirer/expand'
+import input from '@inquirer/input'
 
 export interface Task {
   id: number
@@ -72,9 +75,50 @@ export class TodoApp {
     return foundTask
   }
 
-  printTasks() {
+  async printTasks() {
+    // for (let task of this.db.tasks) {
+    //   console.log(`${task.id} - Task: ${task.name} -- complete: ${task.done ? '✅' : '❌'}`)
+    // }
+
+    let choicesArray: any = []
     for (let task of this.db.tasks) {
-      console.log(`${task.id} - Task: ${task.name} -- complete: ${task.done ? '✅' : '❌'}`)
+      choicesArray.push({
+        name: task.name,
+        value: task,
+        description: `Current task status${task.done ? '✅' : '❌'}`,
+      })
     }
+
+    const task = await select<Task>({
+      message: 'Select a task',
+      choices: choicesArray,
+    })
+
+    const action = await expand({
+      message: 'Press the enter key to toggle the task status',
+      default: 't',
+      expanded: true,
+      choices: [
+        {
+          key: 't',
+          name: 'Toggle task status',
+          value: 'toggle',
+        },
+        {
+          key: 'e',
+          name: 'Edit task name',
+          value: 'edit',
+        },
+      ],
+    })
+    if (action === 'toggle') {
+      task.done = !task.done
+      this.#writeDatabase()
+    } else if ('edit') {
+      const answer = await input({ message: 'Enter a new task name :', default: task.name })
+      task.name = answer
+      this.#writeDatabase()
+    }
+    // console.log(task)
   }
 }
